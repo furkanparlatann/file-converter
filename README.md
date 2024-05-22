@@ -33,7 +33,7 @@ This web application allows users to perform various file conversion operations 
 **Clone the repo**
 
 “`
-git clone https://github.com/your-username/file-converter.git
+git clone https://github.com/furkanparlatann/file-converter.git
 “`
 
 **Navigate to the project directory**
