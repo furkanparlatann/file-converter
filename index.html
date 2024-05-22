@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--Navbar-->
+
+    <nav>
+        <ul>
+            <li><a href="#compress-jpg">Compress JPG</a></li>
+            <li><a href="#combine-images">Combine Images to PDF</a></li>
+            <li><a href="#pdf-to-jpg">PDF to JPG</a></li>
+            <li><a href="#jpg-to-pdf">JPG to PDF</a></li>
+        </ul>
+    </nav>
+
+    <!-- Compress JPG -->
+
+    <div class="operation-container" id="compress-jpg">
+        <h2>Compress JPG</h2>
+        <input type="file" id="compress-jpg-input" accept="image/jpeg" multiple>
+        <button class="operate-btn" type="button" data-operation="compress-jpg">
+            <span class="button__text">Compress</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+          </button>
+        <div class="output" id="compress-jpg-output"></div>
+        <a class="download-btn" id="compress-jpg-download" href="#" download="" style="display: none;">Download</a>
+    </div>
+
+    <!-- Combine Images -->
+
+    <div class="operation-container" id="combine-images">
+        <h2>Combine Images to PDF</h2>
+        <input type="file" id="combine-images-input" accept="image/jpeg,image/png" multiple>
+        <button class="operate-btn" type="button" data-operation="combine-images">
+            <span class="button__text">Combine</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+          </button>
+        <div class="output" id="combine-images-output"></div>
+        <a class="download-btn" id="combine-images-download" href="#" download="" style="display: none;">Download</a>
+    </div>
+
+    <!-- PDF to JPG -->
+
+    <div class="operation-container" id="pdf-to-jpg">
+        <h2>PDF to JPG</h2>
+        <input type="file" id="pdf-to-jpg-input" accept="application/pdf" multiple>
+        <button class="operate-btn" type="button" data-operation="pdf-to-jpg">
+            <span class="button__text">Convert</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+          </button>
+        <div class="output" id="pdf-to-jpg-output"></div>
+        <a class="download-btn" id="pdf-to-jpg-download" href="#" download="" style="display: none;">Download</a>
+    </div>
+
+    <!-- JPG to PDF -->
+
+    <div class="operation-container" id="jpg-to-pdf">
+        <h2>JPG to PDF</h2>
+        <input type="file" id="jpg-to-pdf-input" accept="image/jpeg" multiple>
+        <button class="operate-btn" type="button" data-operation="jpg-to-pdf">
+            <span class="button__text">Convert</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+          </button>
+        <div class="output" id="jpg-to-pdf-output"></div>
+        <a class="download-btn" id="jpg-to-pdf-download" href="#" download="" style="display: none;">Download</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Furkan Parlatan. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.7/canvg.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

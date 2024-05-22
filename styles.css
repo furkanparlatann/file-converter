@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9197AE;
+}
+
+nav {
+    background-color: #273043;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EFF6EE;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.operation-container {
+    background-color: #EFF6EE;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.operation-container h2 {
+    margin-bottom: 20px;
+}
+
+input[type="file"], button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Operate Button Animation */ 
+
+.operate-btn {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DD0426;
+    background-color: #F02D3A;
+    overflow: hidden;
+  }
+  
+  .operate-btn, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .operate-btn .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .operate-btn .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #DD0426;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .operate-btn .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .operate-btn:hover {
+    background: #DD0426;
+  }
+  
+  .operate-btn:hover .button__text {
+    color: transparent;
+  }
+  
+  .operate-btn:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .operate-btn:active .button__icon {
+    background-color: #DD0426;
+  }
+  
+  .operate-btn:active {
+    border: 1px solid #DD0426;
+  }
+
+  /* Operate Button Animation End */
+
+.output img, .output canvas, .output embed {
+    margin-top: 20px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.download-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DD0426;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #DD0426;
+}
+
